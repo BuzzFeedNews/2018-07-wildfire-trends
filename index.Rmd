@@ -14,7 +14,7 @@ To analyze trends in California wildfires, we used the California Department of 
 
 Further graphics, depicting California wildfires fires from 1950 to 2017, were made from the file `calfire_frap.csv`, derived from the same database.
 
-To put California's wildfires in a national context, we used the US Forest Service's [Spatial Wildfire Occurrence Data For The United States](https://www.fs.usda.gov/rds/archive/Product/RDS-2013-0009.4/), which records wildfires across the nation from 1992 to 2015. This data is in a series of CSV files in the `us_files` folder.
+To put California's wildfires in a national context, we used the US Forest Service's [Spatial Wildfire Occurrence Data For The United States](https://www.fs.usda.gov/rds/archive/Product/RDS-2013-0009.4/), which records wildfires across the nation from 1992 to 2015. This data is in a series of CSV files in the `us_fires` folder.
 
 Cal Fire's data on buildings destroyed by wildfires per year is in the file `calfire_damage.csv`.
 
