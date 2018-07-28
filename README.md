@@ -1,6 +1,6 @@
 # How A Booming Population And Climate Change Made California’s Wildfires Worse Than Ever
 
-Data and [R](https://www.r-project.org/) code underlying this Jul. 28, 2018 [BuzzFeed News article](https://www.buzzfeednews.com/article/peteraldhous/california-wildfires-people-climate)on wildfires in California.
+Data and [R](https://www.r-project.org/) code underlying this Jul. 28, 2018 [BuzzFeed News article](https://www.buzzfeednews.com/article/peteraldhous/california-wildfires-people-climate) on wildfires in California.
 
 ## Methodology/Code
 
