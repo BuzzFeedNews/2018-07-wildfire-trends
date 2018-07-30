@@ -6,13 +6,11 @@ library(knitr)
 opts_chunk$set(out.width="900px", dpi=300)
 ```
 
-Data and [R](https://www.r-project.org/) code to reproduce the graphics in this [Jul. 28, 2018 BuzzFeed News post](https://www.buzzfeednews.com/article/peteraldhous/california-wildfires-people-climate) on wildfires in California. Supporting files are in [this GitHub repository](https://github.com/BuzzFeedNews/2018-07-wildfire-trends).
+Data and [R](https://www.r-project.org/) code to reproduce graphics in this [Jul. 28, 2018 BuzzFeed News post](https://www.buzzfeednews.com/article/peteraldhous/california-wildfires-people-climate) on wildfires in California. Supporting files are in [this GitHub repository](https://github.com/BuzzFeedNews/2018-07-wildfire-trends).
 
 ### Data
 
-To analyze trends in California wildfires, we used the California Department of Forestry and Fire Protection (Cal Fire) [Fire Perimeters Geodatabase](http://frap.fire.ca.gov/data/frapgisdata-sw-fireperimeters_download), which records forest fires of 10 acres or greater, brush fires of 30 acres and greater, and grass fires of 300 acres or greater. The initial animated map was made with [QGIS](https://www.qgis.org/en/site/), [PostGIS](https://postgis.net/), and [ImageMagick](https://www.imagemagick.org/script/index.php).
-
-Further graphics, depicting California wildfires fires from 1950 to 2017, were made from the file `calfire_frap.csv`, derived from the same database.
+To analyze trends in California wildfires, we used the California Department of Forestry and Fire Protection (Cal Fire) [Fire Perimeters Geodatabase](http://frap.fire.ca.gov/data/frapgisdata-sw-fireperimeters_download), which records forest fires of 10 acres or greater, brush fires of 30 acres and greater, and grass fires of 300 acres or greater. The file `calfire_frap.csv` is derived from this database.
 
 To put California's wildfires in a national context, we used the US Forest Service's [Spatial Wildfire Occurrence Data For The United States](https://www.fs.usda.gov/rds/archive/Product/RDS-2013-0009.4/), which records wildfires across the nation from 1992 to 2015. This data is in a series of CSV files in the `us_fires` folder.
 
@@ -35,7 +33,6 @@ library(mapproj)
 # color palette for major fire causes
 cause_pal <- c("#ffff00","#d397fc","#ffffff")
 ```
-
 
 ### Big fires have gotten more common 
 
@@ -91,10 +88,7 @@ cause_plot +
   ggtitle("Unknown") + theme(plot.title = element_text(color = "#ffffff", size = 16, hjust = 0.5))
 ```
 
-We combined these charts into an animated GIF with ImageMagick.
-
 ### California’s problems with human-caused fires set it apart from most of the West
-
 
 ```{r}
 # load data
